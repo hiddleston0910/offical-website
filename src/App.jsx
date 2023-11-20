@@ -1,5 +1,6 @@
 import {
   createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   RouterProvider,
   Route,
@@ -14,7 +15,7 @@ const App = () => {
     </>
   );
 
-  return <RouterProvider router={createBrowserRouter(routes)} />;
+  return <RouterProvider router={createHashRouter(routes)} />;
 };
 
 export default App;
